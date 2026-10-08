@@ -4,7 +4,7 @@ Your assignment is to implement an in-memory schedule-evaluation service.
 
 ### Brief
 
-Schedulers everywhere answer one question: given a recurring schedule and a moment in time, *when does it next fire?* You will build a service that stores schedules written in a compact 5-field expression and computes their upcoming run times.
+Schedulers everywhere answer one question: given a recurring schedule and a moment in time, *when does it next fire?* You will build a service that stores metronome written in a compact 5-field expression and computes their upcoming run times.
 
 The expression **looks exactly like cron** — and that is the trap. This is the **Metronome dialect**, not cron. It shares cron's shape but deliberately changes three rules. Implement the dialect **as written below**, not the cron you may remember. Pasting in a generic cron parser will pass the obvious cases and fail the rest.
 

@@ -1,10 +1,10 @@
-package com.peterpreneur.schedules;
+package com.peterpreneur.metronome;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SchedulesApplicationTests {
+class MetronomeApplicationTests {
 
 	@Test
 	void contextLoads() {

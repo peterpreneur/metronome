@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.peterpreneur</groupId>
-	<artifactId>schedules</artifactId>
+	<artifactId>metronome</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>schedules</name>
+	<name>metronome</name>
 	<description/>
 	<url/>
 	<licenses>
