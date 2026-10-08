@@ -1,0 +1,24 @@
+# Compiled Java files
+*.class
+
+# Build output
+target/
+build/
+
+# Local Gradle cache
+.gradle/
+
+# Local IDE files
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Local environment variables
+.env
+.env.local
+
+# Operating system files
+.DS_Store
+Thumbs.db
