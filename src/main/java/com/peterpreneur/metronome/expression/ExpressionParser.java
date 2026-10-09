@@ -115,6 +115,13 @@ public class ExpressionParser {
                         exception);
             }
 
+            if (lo < field.getMin() || hi > field.getMax()) {
+                throw new IllegalArgumentException(
+                        "Invalid " + field.name() + " term '" + term
+                                + "': values must be within " + field.getMin()
+                                + "-" + field.getMax());
+            }
+
             // Equal endpoints are allowed.
             if (lo > hi) {
                 throw new IllegalArgumentException(
