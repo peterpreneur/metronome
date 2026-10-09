@@ -5,7 +5,9 @@
 
 package com.peterpreneur.metronome.expression;
 
+import java.util.Collections;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  *
@@ -19,4 +21,16 @@ public record Schedule(
         Set<Integer> daysOfWeek,
         boolean domRestricted,
         boolean dowRestricted) {
+
+    public Schedule {
+        minutes = sortedCopy(minutes);
+        hours = sortedCopy(hours);
+        daysOfMonth = sortedCopy(daysOfMonth);
+        months = sortedCopy(months);
+        daysOfWeek = sortedCopy(daysOfWeek);
+    }
+
+    private static Set<Integer> sortedCopy(Set<Integer> values) {
+        return Collections.unmodifiableSortedSet(new TreeSet<>(values));
+    }
 }

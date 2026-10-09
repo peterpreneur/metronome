@@ -47,7 +47,15 @@ public class ExpressionParser {
         boolean domRestricted = !parts[2].equals("*");
         boolean dowRestricted = !parts[4].equals("*");
 
-        throw new UnsupportedOperationException("Not implemented");
+        return new Schedule(
+                minutes,
+                hours,
+                daysOfMonth,
+                months,
+                daysOfWeek,
+                domRestricted,
+                dowRestricted
+        );
     }
 
     private static Set<Integer> parseField(String text, Field field) {
