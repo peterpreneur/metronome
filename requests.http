@@ -1,0 +1,16 @@
+### Update the daily schedule
+PUT http://localhost:8080/schedules/daily
+Content-Type: application/json
+
+{
+  "expr": "0 9 * * *"
+}
+
+### Get the next three daily schedule times
+POST http://localhost:8080/schedules/daily/next
+Content-Type: application/json
+
+{
+  "after": "2026-10-09T08:00:00Z",
+  "count": 3
+}
